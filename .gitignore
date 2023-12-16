@@ -1,0 +1,25 @@
+# files to ignore
+/*
+!/.config/
+/.config/*
+
+# don't ignore these files
+!.gitignore
+!.alacritty.yml
+!.vimrc
+!.zshrc
+!.p10k.zsh
+!.hyper.js
+!.oh-my-zsh
+
+!/.config/fish/
+!/.config/nvim/
+!/.config/tmux/
+!/.config/micro/
+!/.config/htop/
+!/.config/btop/
+# !/.config/raycast/
+!/.config/kitty/
+!/.config/helix/
+!/.config/zed/
+!/.config/starship.toml
