@@ -4,6 +4,7 @@
 /.config/*
 
 # don't ignore these files
+!.readme.md
 !.gitignore
 !.gitconfig
 !.alacritty.yml
