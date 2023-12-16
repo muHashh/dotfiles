@@ -5,6 +5,7 @@
 
 # don't ignore these files
 !.gitignore
+!.gitconfig
 !.alacritty.yml
 !.vimrc
 !.zshrc
