@@ -23,4 +23,5 @@
 !/.config/helix/
 !/.config/zed/
 !/.config/alacritty/
+!/.config/iterm2/
 !/.config/starship.toml
