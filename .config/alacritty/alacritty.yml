@@ -1,7 +1,7 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
 window:
-  opacity: 0.999
+  opacity: 0.99
 
 font:
   normal:
@@ -27,9 +27,6 @@ import:
 
 
 # OSX specific config
-
-window:
-    option_as_alt: OnlyLeft
 
 key_bindings:
   - { key: Left,     mods: Alt,     chars: "\x1bb"                       } # Skip word left
