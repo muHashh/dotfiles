@@ -7,7 +7,6 @@
 !readme.md
 !.gitignore
 !.gitconfig
-!.alacritty.yml
 !.vimrc
 !.zshrc
 !.p10k.zsh
@@ -23,4 +22,5 @@
 !/.config/kitty/
 !/.config/helix/
 !/.config/zed/
+!/.config/alacritty/
 !/.config/starship.toml
