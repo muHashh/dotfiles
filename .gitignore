@@ -19,7 +19,7 @@
 !/.config/htop/
 !/.config/btop/
 # !/.config/raycast/
-!/.config/kitty/
+# !/.config/kitty/
 !/.config/helix/
 !/.config/zed/
 !/.config/alacritty/
