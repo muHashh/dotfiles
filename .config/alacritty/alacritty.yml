@@ -4,6 +4,10 @@ window:
   opacity: 0.99
 
 font:
+  antialiasing: Subpixel
+  hinting: Full
+  ligatures: true
+
   normal:
     family: Hack Nerd Font Mono
     style: Regular
