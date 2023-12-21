@@ -20,7 +20,7 @@
   },
   "files.watcherExclude": {
   },
-  "editor.fontFamily": "FiraCode Nerd Font Mono",
+  "editor.fontFamily": "Hack Nerd Font Mono",
   "editor.fontLigatures": true,
   "git.openRepositoryInParentFolders": "always",
   "github.copilot.enable": {
@@ -48,5 +48,5 @@
   "telemetry.telemetryLevel": "off",
   "gitlens.telemetry.enabled": false,
   "workbench.colorTheme": "Gruvbox Dark Medium",
-  "fonted.font": "FiraCode Nerd Font Mono",
+  "fonted.font": "Hack Nerd Font Mono",
 }
