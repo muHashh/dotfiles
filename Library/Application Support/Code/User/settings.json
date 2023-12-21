@@ -1,0 +1,61 @@
+{
+  // "editor.accessibilitySupport": "off",
+  // "terminal.integrated.env.osx": {
+  //   "FIG_NEW_SESSION": "1"
+  // },
+  "workbench.startupEditor": "none",
+  "editor.minimap.enabled": false,
+  // "workbench.colorCustomizations": {
+  //   "terminal.background": "#191723",
+  //   "panel.background": "#191723",
+  // },
+  "workbench.iconTheme": null,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "python.defaultInterpreterPath": "/usr/local/bin/python3",
+  "trunk.trunkGrayOutNonBlockingIssues": false,
+  // "clangd.path": "/Users/hassan/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/16.0.2/clangd_16.0.2/bin/clangd",
+  "files.exclude": {
+    "**/.trunk/*actions/": true,
+    "**/.trunk/*logs/": true,
+    "**/.trunk/*notifications/": true,
+    "**/.trunk/*out/": true,
+    "**/.trunk/*plugins/": true
+  },
+  "files.watcherExclude": {
+    "**/.trunk/*actions/": true,
+    "**/.trunk/*logs/": true,
+    "**/.trunk/*notifications/": true,
+    "**/.trunk/*out/": true,
+    "**/.trunk/*plugins/": true
+  },
+  "editor.defaultFormatter": "trunk.io",
+  "editor.fontFamily": "Hack Nerd Font Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "git.openRepositoryInParentFolders": "always",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  // "C_Cpp.intelliSenseEngine": "disabled",
+  // "[cpp]": {
+  //   "editor.wordBasedSuggestions": false,
+  //   "editor.suggest.insertMode": "replace",
+  //   "editor.semanticHighlighting.enabled": true
+  // },
+  // "C_Cpp.intelliSenseEngineFallback": "enabled",
+  // "editor.cursorSmoothCaretAnimation": "on",
+  "terminal.integrated.fontSize": 12,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.activityBar.location": "top",
+  "editor.fontSize": 13,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+}
