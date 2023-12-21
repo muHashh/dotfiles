@@ -47,6 +47,6 @@
   },
   "telemetry.telemetryLevel": "off",
   "gitlens.telemetry.enabled": false,
-  "workbench.colorTheme": "Gruvbox Material Dark",
+  "workbench.colorTheme": "Gruvbox Dark Medium",
   "fonted.font": "FiraCode Nerd Font Mono",
 }
