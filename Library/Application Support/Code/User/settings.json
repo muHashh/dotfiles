@@ -9,7 +9,7 @@
   //   "terminal.background": "#191723",
   //   "panel.background": "#191723",
   // },
-  "workbench.iconTheme": null,
+  "workbench.iconTheme": "vs-minimal",
   "[python]": {
     "editor.formatOnType": true
   },
@@ -20,7 +20,7 @@
   },
   "files.watcherExclude": {
   },
-  "editor.fontFamily": "Hack Nerd Font Mono",
+  "editor.fontFamily": "FiraCode Nerd Font Mono",
   "editor.fontLigatures": true,
   "git.openRepositoryInParentFolders": "always",
   "github.copilot.enable": {
@@ -37,14 +37,16 @@
   // },
   // "C_Cpp.intelliSenseEngineFallback": "enabled",
   // "editor.cursorSmoothCaretAnimation": "on",
-  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontSize": 14,
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
   "workbench.activityBar.location": "top",
-  "editor.fontSize": 13,
+  "editor.fontSize": 14,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
   "telemetry.telemetryLevel": "off",
   "gitlens.telemetry.enabled": false,
+  "workbench.colorTheme": "Gruvbox Material Dark",
+  "fonted.font": "FiraCode Nerd Font Mono",
 }
