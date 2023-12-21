@@ -15,24 +15,12 @@
   },
   "go.toolsManagement.autoUpdate": true,
   "python.defaultInterpreterPath": "/usr/local/bin/python3",
-  "trunk.trunkGrayOutNonBlockingIssues": false,
   // "clangd.path": "/Users/hassan/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/16.0.2/clangd_16.0.2/bin/clangd",
   "files.exclude": {
-    "**/.trunk/*actions/": true,
-    "**/.trunk/*logs/": true,
-    "**/.trunk/*notifications/": true,
-    "**/.trunk/*out/": true,
-    "**/.trunk/*plugins/": true
   },
   "files.watcherExclude": {
-    "**/.trunk/*actions/": true,
-    "**/.trunk/*logs/": true,
-    "**/.trunk/*notifications/": true,
-    "**/.trunk/*out/": true,
-    "**/.trunk/*plugins/": true
   },
-  "editor.defaultFormatter": "trunk.io",
-  "editor.fontFamily": "Hack Nerd Font Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Hack Nerd Font Mono",
   "editor.fontLigatures": true,
   "git.openRepositoryInParentFolders": "always",
   "github.copilot.enable": {
@@ -41,7 +29,6 @@
     "markdown": false,
     "scminput": false
   },
-  "workbench.colorTheme": "Gruvbox Dark Hard",
   // "C_Cpp.intelliSenseEngine": "disabled",
   // "[cpp]": {
   //   "editor.wordBasedSuggestions": false,
@@ -58,4 +45,6 @@
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
+  "telemetry.telemetryLevel": "off",
+  "gitlens.telemetry.enabled": false,
 }
