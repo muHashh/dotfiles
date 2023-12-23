@@ -9,6 +9,7 @@
     "editor.background": "#121212",
     "tab.activeBackground": "#121212",
     "tab.activeBorderTop": "#121212",
+    "panelSectionHeader.border": "#ff0000"
     // "tab.activeForeground": "#DDDDDD",
     // "tab.inactiveBackground": "#191723",
     //   "terminal.background": "#191723",
@@ -53,4 +54,5 @@
   "fonted.font": "Zed Mono",
   "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
   "window.commandCenter": false,
+  "vim.smartRelativeLine": true,
 }
