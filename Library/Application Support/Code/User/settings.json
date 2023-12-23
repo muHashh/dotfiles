@@ -5,10 +5,15 @@
   // },
   "workbench.startupEditor": "none",
   "editor.minimap.enabled": false,
-  // "workbench.colorCustomizations": {
-  //   "terminal.background": "#191723",
-  //   "panel.background": "#191723",
-  // },
+  "workbench.colorCustomizations": {
+    "editor.background": "#121212",
+    "tab.activeBackground": "#121212",
+    "tab.activeBorderTop": "#121212",
+    // "tab.activeForeground": "#DDDDDD",
+    // "tab.inactiveBackground": "#191723",
+    //   "terminal.background": "#191723",
+    //   "panel.background": "#191723",
+  },
   "workbench.iconTheme": "vs-minimal",
   "[python]": {
     "editor.formatOnType": true
@@ -16,11 +21,9 @@
   "go.toolsManagement.autoUpdate": true,
   "python.defaultInterpreterPath": "/usr/local/bin/python3",
   // "clangd.path": "/Users/hassan/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/16.0.2/clangd_16.0.2/bin/clangd",
-  "files.exclude": {
-  },
-  "files.watcherExclude": {
-  },
-  "editor.fontFamily": "Hack Nerd Font Mono",
+  "files.exclude": {},
+  "files.watcherExclude": {},
+  "editor.fontFamily": "Zed Mono",
   "editor.fontLigatures": true,
   "git.openRepositoryInParentFolders": "always",
   "github.copilot.enable": {
@@ -37,16 +40,17 @@
   // },
   // "C_Cpp.intelliSenseEngineFallback": "enabled",
   // "editor.cursorSmoothCaretAnimation": "on",
-  "terminal.integrated.fontSize": 14,
-  "window.commandCenter": false,
+  "terminal.integrated.fontSize": 13,
   "workbench.layoutControl.enabled": false,
   "workbench.activityBar.location": "top",
-  "editor.fontSize": 14,
+  "editor.fontSize": 13,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
   "telemetry.telemetryLevel": "off",
   "gitlens.telemetry.enabled": false,
-  "workbench.colorTheme": "Gruvbox Dark Medium",
-  "fonted.font": "Hack Nerd Font Mono",
+  "workbench.colorTheme": "Modern Dark Monokai",
+  "fonted.font": "Zed Mono",
+  "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+  "window.commandCenter": false,
 }
