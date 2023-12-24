@@ -9,7 +9,6 @@
     "editor.background": "#121212",
     "tab.activeBackground": "#121212",
     "tab.activeBorderTop": "#121212",
-    "panelSectionHeader.border": "#ff0000"
     // "tab.activeForeground": "#DDDDDD",
     // "tab.inactiveBackground": "#191723",
     //   "terminal.background": "#191723",
@@ -24,7 +23,6 @@
   // "clangd.path": "/Users/hassan/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/16.0.2/clangd_16.0.2/bin/clangd",
   "files.exclude": {},
   "files.watcherExclude": {},
-  "editor.fontFamily": "Zed Mono",
   "editor.fontLigatures": true,
   "git.openRepositoryInParentFolders": "always",
   "github.copilot.enable": {
@@ -44,15 +42,16 @@
   "terminal.integrated.fontSize": 13,
   "workbench.layoutControl.enabled": false,
   "workbench.activityBar.location": "top",
-  "editor.fontSize": 13,
+  "editor.fontSize": 14,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
   "telemetry.telemetryLevel": "off",
   "gitlens.telemetry.enabled": false,
   "workbench.colorTheme": "Modern Dark Monokai",
-  "fonted.font": "Zed Mono",
-  "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  // "fonted.font": "Zed Mono",
+  // "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
   "window.commandCenter": false,
   "vim.smartRelativeLine": true,
 }
