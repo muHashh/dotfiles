@@ -39,7 +39,7 @@
   // },
   // "C_Cpp.intelliSenseEngineFallback": "enabled",
   // "editor.cursorSmoothCaretAnimation": "on",
-  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontSize": 14,
   "workbench.layoutControl.enabled": false,
   "workbench.activityBar.location": "top",
   "editor.fontSize": 14,
@@ -50,8 +50,6 @@
   "gitlens.telemetry.enabled": false,
   "workbench.colorTheme": "Modern Dark Monokai",
   "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
-  // "fonted.font": "Zed Mono",
-  // "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
-  "window.commandCenter": false,
   "vim.smartRelativeLine": true,
+  "window.commandCenter": false,
 }
