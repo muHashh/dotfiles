@@ -49,7 +49,8 @@
   "telemetry.telemetryLevel": "off",
   "gitlens.telemetry.enabled": false,
   "workbench.colorTheme": "Modern Dark Monokai",
-  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
   "vim.smartRelativeLine": true,
   "window.commandCenter": false,
+  "terminal.integrated.defaultProfile.osx": "zsh",
 }
