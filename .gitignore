@@ -4,13 +4,13 @@
 /.config/*
 
 # don't ignore these files
-!readme.md
 !.gitignore
 !.gitconfig
 !.vimrc
 !.zshrc
 !.p10k.zsh
 !.hyper.js
+!.zprofile
 
 !/.config/fish/
 !/.config/nvim/
