@@ -16,12 +16,10 @@
 !/.config/nvim/
 !/.config/tmux/
 !/.config/micro/
-!/.config/htop/
-!/.config/btop/
 # !/.config/raycast/
 # !/.config/kitty/
-!/.config/helix/
+# !/.config/helix/
 !/.config/zed/
 !/.config/alacritty/
-!/.config/iterm2/
+# !/.config/iterm2/
 !/.config/starship.toml
