@@ -144,6 +144,7 @@ alias ll="ls -Fl --group-directories-first"
 alias exa="exa --icons"
 alias ls="exa"
 alias la="exa -la"
+alias fd="fd -I"
 export PATH=$PATH:~/.spicetify
 
 
