@@ -39,10 +39,10 @@
   // },
   // "C_Cpp.intelliSenseEngineFallback": "enabled",
   // "editor.cursorSmoothCaretAnimation": "on",
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 13,
   "workbench.layoutControl.enabled": false,
   "workbench.activityBar.location": "top",
-  "editor.fontSize": 14,
+  "editor.fontSize": 13,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
