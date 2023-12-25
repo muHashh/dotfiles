@@ -36,7 +36,7 @@ font:
   size: 13
 
 import:
- - ~/.config/alacritty/themes/themes/gruvbox_dark.yaml
+ - ~/.config/alacritty/themes/gruvbox_dark.yaml
 
 # OSX specific config
 
