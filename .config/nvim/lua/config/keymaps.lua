@@ -8,5 +8,5 @@ local delete = vim.keymap.del
 -- Next/Prev Buffer
 delete("n", "<S-h>")
 delete("n", "<S-l>")
-map("n", "<tab>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
-map("n", "<S-tab>", "<cmd>bnext<cr>", { desc = "Next buffer" })
+map("n", "<tab>", "<cmd>bnext<cr>", { desc = "Next buffer" })
+map("n", "<S-tab>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
