@@ -5,8 +5,8 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox-material",
-      -- colorscheme = "oxocarbon",
+      -- colorscheme = "gruvbox-material",
+      colorscheme = "oxocarbon",
       -- background = "dark",
     },
   },

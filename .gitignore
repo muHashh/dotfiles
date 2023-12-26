@@ -19,7 +19,7 @@
 # !/.config/raycast/
 # !/.config/kitty/
 # !/.config/helix/
-!/.config/zed/
+# !/.config/zed/
 !/.config/alacritty/
 # !/.config/iterm2/
 !/.config/starship.toml
