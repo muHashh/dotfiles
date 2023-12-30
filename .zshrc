@@ -111,9 +111,9 @@ source $ZSH/oh-my-zsh.sh
 
 # custom stuff
 
-PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-
-export PATH=~/local/bin:$PATH
+export PATH="~/.spicetify:$PATH"
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="~/local/bin:$PATH"
 
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
@@ -145,7 +145,6 @@ alias exa="exa --icons"
 alias ls="exa"
 alias la="exa -la"
 alias fd="fd -I"
-export PATH=$PATH:~/.spicetify
-
+alias dotfiles="$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 eval "$(starship init zsh)"
