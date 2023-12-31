@@ -6,13 +6,13 @@
   "workbench.startupEditor": "none",
   "editor.minimap.enabled": false,
   "workbench.colorCustomizations": {
-    "editor.background": "#121212",
-    "tab.activeBackground": "#121212",
-    "tab.activeBorderTop": "#121212",
+    // "editor.background": "#121212",
+    // "tab.activeBackground": "#121212",
+    // "tab.activeBorderTop": "#121212",
     // "tab.activeForeground": "#DDDDDD",
     // "tab.inactiveBackground": "#191723",
-    //   "terminal.background": "#191723",
-    //   "panel.background": "#191723",
+    // "terminal.background": "#191723",
+    // "panel.background": "#191723",
   },
   "workbench.iconTheme": "vs-minimal",
   "[python]": {
@@ -51,7 +51,7 @@
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "window.commandCenter": false,
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "workbench.colorTheme": "Modern Dark Monokai",
+  "workbench.colorTheme": "GitHub Dark Default",
   "vim.smartRelativeLine": true,
   "editor.cursorSmoothCaretAnimation": "on",
 }

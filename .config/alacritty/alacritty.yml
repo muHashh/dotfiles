@@ -39,7 +39,7 @@ font:
   size: 13
 
 import:
-  - ~/.themes/alacritty/oxocarbon-dark.yml
+  - ~/.themes/alacritty/github_dark_default.yaml
 
 # OSX specific config
 
