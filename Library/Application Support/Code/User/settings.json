@@ -53,4 +53,5 @@
   "terminal.integrated.defaultProfile.osx": "zsh",
   "workbench.colorTheme": "Modern Dark Monokai",
   "vim.smartRelativeLine": true,
+  "editor.cursorSmoothCaretAnimation": "on",
 }
