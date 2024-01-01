@@ -11,9 +11,6 @@ window:
     y: 5
 
 font:
-  antialiasing: Subpixel
-  hinting: Full
-  ligatures: true
   draw_bold_text_with_bright_colors: true
 
   normal:
