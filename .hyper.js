@@ -34,7 +34,7 @@ module.exports = {
     // opacity is only supported on macOS
     // backgroundColor: '#000',
     // terminal selection color
-    selectionColor: 'rgba(248,28,229,0.3)',
+    selectionColor: 'rgba(121, 192, 255, 0.3)',
     // border color (window, tabs)
     borderColor: '#333',
     // custom CSS to embed in the main window
