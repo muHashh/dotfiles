@@ -1,14 +1,13 @@
-# oh-my-zsh config
+### oh-my-zsh config
 export ZSH="$HOME/.oh-my-zsh"
 # ZSH_THEME="refined"
 plugins=(git zsh-autosuggestions vscode history-substring-search zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 
-# start of my config 
+### start of my config 
 
-# externals
-
+## externals
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # >>> conda initialize >>>
@@ -28,16 +27,14 @@ unset __conda_setup
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# exports
+## exports
 export PATH="~/.spicetify:$PATH"
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-export PATH="~/local/bin:$PATH"
 
-# key bindings
+## key bindings
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
 
-# aliases
+## aliases
 alias cat='bat --paging=never'
 alias ll="ls -Fl --group-directories-first"
 alias exa="exa --icons"
@@ -46,8 +43,7 @@ alias la="exa -la"
 alias fd="fd -I"
 alias dotfiles="$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
-# prompt
-
+## prompt
 # if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
 #   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 # fi
