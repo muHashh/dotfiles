@@ -1,2 +1,2 @@
-# source "$HOME/.tmux.conf"
-export PATH=/Users/hassan/.local/bin:$PATH
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="~/local/bin:$PATH"
