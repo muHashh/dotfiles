@@ -1,7 +1,7 @@
 ### oh-my-zsh config
 export ZSH="$HOME/.oh-my-zsh"
 # ZSH_THEME="refined"
-plugins=(git zsh-autosuggestions vscode history-substring-search zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions vscode history-substring-search zsh-syntax-highlighting fzf-tab)
 source $ZSH/oh-my-zsh.sh
 
 
@@ -36,12 +36,13 @@ bindkey "^[[1;3D" backward-word
 
 ## aliases
 alias cat='bat --paging=never'
-alias ll="ls -Fl --group-directories-first"
-alias exa="exa --icons"
-alias ls="exa"
-alias la="exa -la"
-alias fd="fd -I"
-alias dotfiles="$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+alias ll='ls -l --group-directories-first'
+alias eza='eza --icons'
+alias ls='eza'
+alias la='eza -la'
+alias fd='fd -I'
+alias dotfiles='$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias cdto='cd; cd $(fd --type d --hidden . Desktop Documents .config workspace | fzf)'
 
 ## prompt
 # if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
@@ -49,3 +50,4 @@ alias dotfiles="$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 # fi
 
 eval "$(starship init zsh)"
+eval "$(zoxide init --cmd cd zsh)"

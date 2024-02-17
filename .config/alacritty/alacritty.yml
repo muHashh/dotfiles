@@ -4,7 +4,7 @@ env:
   TERM: xterm-256color
 
 window:
-  opacity: 0.999999
+  opacity: 0.92
 
   padding:
     x: 5
@@ -36,7 +36,7 @@ font:
   size: 13
 
 import:
-  - ~/.themes/alacritty/github_dark_default.yaml
+  - ~/.themes/alacritty/gruvbox_dark.yaml
 
 # OSX specific config
 

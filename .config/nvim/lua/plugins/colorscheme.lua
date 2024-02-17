@@ -1,7 +1,7 @@
 return {
   { "nyoom-engineering/oxocarbon.nvim" },
-  -- { "ellisonleao/gruvbox.nvim", priority = 1000, config = true },
   { "sainnhe/gruvbox-material" },
+  -- { "ellisonleao/gruvbox.nvim", priority = 1000, config = true },
   {
     "projekt0n/github-nvim-theme",
     lazy = false,
@@ -10,9 +10,9 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      -- colorscheme = "gruvbox-material",
+      colorscheme = "gruvbox-material",
       -- colorscheme = "oxocarbon",
-      colorscheme = "github_dark_default",
+      -- colorscheme = "github_dark_default",
       -- background = "dark",
     },
   },

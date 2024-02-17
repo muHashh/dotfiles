@@ -41,7 +41,6 @@
   // "editor.cursorSmoothCaretAnimation": "on",
   "terminal.integrated.fontSize": 13,
   "workbench.layoutControl.enabled": false,
-  "workbench.activityBar.location": "top",
   "editor.fontSize": 13,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
