@@ -1,0 +1,1 @@
+{"metrics":{"start_time":1704116041279,"completion_time":1704116042111},"secondary_sources":[],"schema_version":"1.1","name":"hadolint","links":{"share":{},"opt":{},"bin":{"hadolint":"hadolint-Darwin-x86_64"}},"primary_source":{"id":"pkg:github\/hadolint\/hadolint@v2.12.0","type":"registry+v1"}}

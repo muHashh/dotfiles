@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/Users/hassan'
+let g:netrw_dirhist_3='/Users/hassan/workspace/quant'
+let g:netrw_dirhist_2='/Users/hassan/workspace/interview/gsa_test'
+let g:netrw_dirhist_1='/Users/hassan/workspace/quant'
+let g:netrw_dirhist_0='/Users/hassan'
+let g:netrw_dirhist_9='/Users/hassan/Library/Application Support/eDEX-UI'
+let g:netrw_dirhist_8='/Users/hassan/workspace/quant'
+let g:netrw_dirhist_7='/Users/hassan/.config/alacritty'
+let g:netrw_dirhist_6='/Users/hassan'
+let g:netrw_dirhist_5='/Users/hassan/workspace/projects'

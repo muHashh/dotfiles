@@ -1,0 +1,1 @@
+{"metrics":{"start_time":1704116048870,"completion_time":1704116050415},"secondary_sources":[],"schema_version":"1.1","name":"marksman","links":{"share":{},"opt":{},"bin":{"marksman":"marksman-macos"}},"primary_source":{"id":"pkg:github\/artempyanykh\/marksman@2023-12-09","type":"registry+v1"}}

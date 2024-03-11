@@ -1,0 +1,1 @@
+{"metrics":{"start_time":1704116042119,"completion_time":1704116044111},"secondary_sources":[],"schema_version":"1.1","name":"goimports","links":{"share":{},"opt":{},"bin":{"goimports":"goimports"}},"primary_source":{"id":"pkg:golang\/golang.org\/x\/tools@v0.16.1#cmd\/goimports","type":"registry+v1"}}

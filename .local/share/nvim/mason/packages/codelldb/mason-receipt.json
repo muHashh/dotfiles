@@ -1,0 +1,1 @@
+{"metrics":{"start_time":1704116049261,"completion_time":1704116052209},"secondary_sources":[],"schema_version":"1.1","name":"codelldb","links":{"share":{},"opt":{},"bin":{"codelldb":"codelldb"}},"primary_source":{"id":"pkg:github\/vadimcn\/vscode-lldb@v1.10.0","type":"registry+v1"}}
