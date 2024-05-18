@@ -1,6 +1,6 @@
 ### oh-my-zsh config
 export ZSH="$HOME/.oh-my-zsh"
-# ZSH_THEME="refined"
+# ZSH_THEME="agnoster"
 plugins=(git zsh-autosuggestions vscode history-substring-search zsh-syntax-highlighting fzf-tab)
 source $ZSH/oh-my-zsh.sh
 
@@ -29,6 +29,7 @@ unset __conda_setup
 
 ## exports
 export PATH="~/.spicetify:$PATH"
+export EDITOR="nvim"
 
 ## key bindings
 bindkey "^[[1;3C" forward-word

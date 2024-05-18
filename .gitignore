@@ -15,7 +15,7 @@
 !/.config/fish/
 !/.config/nvim/
 !/.config/tmux/
-!/.config/micro/
+# !/.config/micro/
 # !/.config/raycast/
 # !/.config/kitty/
 # !/.config/helix/

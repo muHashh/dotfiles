@@ -39,18 +39,19 @@
   // },
   // "C_Cpp.intelliSenseEngineFallback": "enabled",
   // "editor.cursorSmoothCaretAnimation": "on",
-  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontSize": 11,
   "workbench.layoutControl.enabled": false,
-  "editor.fontSize": 13,
+  "editor.fontSize": 12,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
   "telemetry.telemetryLevel": "off",
   "gitlens.telemetry.enabled": false,
-  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontFamily": "Zed Mono",
   "window.commandCenter": false,
   "terminal.integrated.defaultProfile.osx": "zsh",
   "workbench.colorTheme": "GitHub Dark Default",
   "vim.smartRelativeLine": true,
   "editor.cursorSmoothCaretAnimation": "on",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
 }
