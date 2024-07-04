@@ -47,11 +47,12 @@
   },
   "telemetry.telemetryLevel": "off",
   "gitlens.telemetry.enabled": false,
-  "editor.fontFamily": "Zed Mono",
+  "editor.fontFamily":  "JetBrainsMono Nerd Font",
   "window.commandCenter": false,
   "terminal.integrated.defaultProfile.osx": "zsh",
   "workbench.colorTheme": "GitHub Dark Default",
   "vim.smartRelativeLine": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontWeight": "bold",
 }

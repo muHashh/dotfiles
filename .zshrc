@@ -1,6 +1,6 @@
 ### oh-my-zsh config
 export ZSH="$HOME/.oh-my-zsh"
-# ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
 plugins=(git zsh-autosuggestions vscode history-substring-search zsh-syntax-highlighting fzf-tab)
 source $ZSH/oh-my-zsh.sh
 
@@ -25,7 +25,13 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
+
+# HISTFILE=~/.zsh_history
+# HISTSIZE=10000
+# SAVEHIST=10000
+# setopt appendhistory
 
 ## exports
 export PATH="~/.spicetify:$PATH"
@@ -42,7 +48,7 @@ alias eza='eza --icons'
 alias ls='eza'
 alias la='eza -la'
 alias fd='fd -I'
-alias dotfiles='$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dots='$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias cdto='cd; cd $(fd --type d --hidden . Desktop Documents .config workspace | fzf)'
 
 ## prompt
@@ -50,5 +56,5 @@ alias cdto='cd; cd $(fd --type d --hidden . Desktop Documents .config workspace 
 #   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 # fi
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
