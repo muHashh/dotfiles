@@ -56,5 +56,5 @@ alias cdto='cd; cd $(fd --type d --hidden . Desktop Documents .config workspace 
 #   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 # fi
 
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
