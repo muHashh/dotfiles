@@ -50,9 +50,15 @@
   "editor.fontFamily":  "JetBrainsMono Nerd Font",
   "window.commandCenter": false,
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.colorTheme": "Gruvbox in Black Bordered",
   "vim.smartRelativeLine": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontWeight": "bold",
+  "leetcode.workspaceFolder": "/Users/hassan/.leetcode",
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "supermaven.enableFixWithSupermaven": true,
 }

@@ -59,9 +59,9 @@ args = ["-l", "-c", "tmux attach || tmux"]
 program = "/bin/zsh"
 
 [window]
-decorations = "none"
+# decorations = "none"
 opacity = 0.8
-option_as_alt = "Both"
+# option_as_alt = "Both"
 blur = true
 
 [window.padding]
