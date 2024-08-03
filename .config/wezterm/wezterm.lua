@@ -71,50 +71,22 @@ end)
 
 -- Keybindings
 config.keys = {
-	{
-		key = "d",
-		mods = "CMD",
-		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
-	},
-	{
-		key = "d",
-		mods = "CMD|SHIFT",
-		action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
-	},
-	-- Make Option-Left equivalent to Alt-b which many line editors interpret as backward-word
-	{
-		key = "LeftArrow",
-		mods = "OPT",
-		action = wezterm.action({ SendString = "\x1bb" }),
-	},
-	-- Make Option-Right equivalent to Alt-f; forward-word
-	{
-		key = "RightArrow",
-		mods = "OPT",
-		action = wezterm.action({ SendString = "\x1bf" }),
-	},
-	-- Select next tab with cmd-opt-left/right arrow
-	{
-		key = "LeftArrow",
-		mods = "CMD|OPT",
-		action = wezterm.action.ActivateTabRelative(-1),
-	},
-	{
-		key = "RightArrow",
-		mods = "CMD|OPT",
-		action = wezterm.action.ActivateTabRelative(1),
-	},
-	-- Select next pane with cmd-left/right arrow
-	{
-		key = "LeftArrow",
-		mods = "CMD",
-		action = wezterm.action({ ActivatePaneDirection = "Prev" }),
-	},
-	{
-		key = "RightArrow",
-		mods = "CMD",
-		action = wezterm.action({ ActivatePaneDirection = "Next" }),
-	},
+	{ mods = "OPT", key = "LeftArrow", action = wezterm.action.SendKey({ mods = "ALT", key = "b" }) },
+	{ mods = "OPT", key = "RightArrow", action = wezterm.action.SendKey({ mods = "ALT", key = "f" }) },
+	{ mods = "CMD", key = "LeftArrow", action = wezterm.action.SendKey({ mods = "CTRL", key = "a" }) },
+	{ mods = "CMD", key = "RightArrow", action = wezterm.action.SendKey({ mods = "CTRL", key = "e" }) },
+	{ mods = "CMD", key = "Backspace", action = wezterm.action.SendKey({ mods = "CTRL", key = "u" }) },
+	{ mods = "CMD|OPT", key = "LeftArrow", action = wezterm.action.ActivateTabRelative(-1) },
+	{ mods = "CMD|OPT", key = "RightArrow", action = wezterm.action.ActivateTabRelative(1) },
+	{ mods = "CMD|SHIFT", key = "LeftArrow", action = wezterm.action.ActivateTabRelative(-1) },
+	{ mods = "CMD|SHIFT", key = "RightArrow", action = wezterm.action.ActivateTabRelative(1) },
+	{ mods = "CMD", key = "d", action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
+	{ mods = "CMD|SHIFT", key = "d", action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }) },
+	{ key = "h", mods = "LEADER", action = wezterm.action.ActivatePaneDirection("Left") },
+	{ key = "j", mods = "LEADER", action = wezterm.action.ActivatePaneDirection("Down") },
+	{ key = "k", mods = "LEADER", action = wezterm.action.ActivatePaneDirection("Up") },
+	{ key = "l", mods = "LEADER", action = wezterm.action.ActivatePaneDirection("Right") },
+	{ key = "-", mods = "LEADER", action = wezterm.action.ActivatePaneDirection("Right") },
 }
 
 config.mouse_bindings = {
