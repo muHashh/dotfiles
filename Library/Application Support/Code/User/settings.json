@@ -3,7 +3,8 @@
   // "terminal.integrated.env.osx": {
   //   "FIG_NEW_SESSION": "1"
   // },
-  "workbench.startupEditor": "none",
+ "workbench.editor.enablePreview": false,
+ "workbench.startupEditor": "none",
   "editor.minimap.enabled": false,
   "workbench.colorCustomizations": {
     // "editor.background": "#121212",
@@ -39,7 +40,8 @@
   // },
   // "C_Cpp.intelliSenseEngineFallback": "enabled",
   // "editor.cursorSmoothCaretAnimation": "on",
-  "terminal.integrated.fontSize": 11,
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontWeight": "bold",
   "workbench.layoutControl.enabled": false,
   "editor.fontSize": 12,
   "extensions.experimental.affinity": {
@@ -61,4 +63,11 @@
     "workbench.action.tasks.runTask"
   ],
   "supermaven.enableFixWithSupermaven": true,
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "explorer.confirmDelete": false,
+  "C_Cpp.clang_format_fallbackStyle": "Google",
+  "workbench.activityBar.location": "bottom",
+  "workbench.sideBar.location": "right",
 }

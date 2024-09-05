@@ -1,14 +1,17 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 ### oh-my-zsh config
 export ZSH="$HOME/.oh-my-zsh"
-# ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git zsh-autosuggestions vscode history-substring-search zsh-syntax-highlighting fzf-tab)
 source $ZSH/oh-my-zsh.sh
 
-
 ### start of my config 
-
-## externals
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -51,10 +54,13 @@ alias fd='fd -I'
 alias dots='$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias cdto='cd; cd $(fd --type d --hidden . Desktop Documents .config workspace | fzf)'
 
-## prompt
-# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-# fi
-
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export PATH=$PATH:/Users/hassan/.spicetify
+
+# Created by `pipx` on 2024-09-03 22:20:11
+export PATH="$PATH:/Users/hassan/.local/bin"
