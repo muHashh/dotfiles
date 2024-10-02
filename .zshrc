@@ -53,6 +53,7 @@ alias la='eza -la'
 alias fd='fd -I'
 alias dots='$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias cdto='cd; cd $(fd --type d --hidden . Desktop Documents .config workspace | fzf)'
+alias r="ranger"
 
 # eval "$(starship init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
@@ -61,6 +62,7 @@ eval "$(zoxide init --cmd cd zsh)"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export PATH=$PATH:/Users/hassan/.spicetify
+source ./.zsecs
 
 # Created by `pipx` on 2024-09-03 22:20:11
 export PATH="$PATH:/Users/hassan/.local/bin"

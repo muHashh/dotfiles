@@ -52,7 +52,7 @@
   "editor.fontFamily":  "JetBrainsMono Nerd Font",
   "window.commandCenter": false,
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "workbench.colorTheme": "Gruvbox in Black Bordered",
+  "workbench.colorTheme": "1337 Modern",
   "vim.smartRelativeLine": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
@@ -68,6 +68,6 @@
   },
   "explorer.confirmDelete": false,
   "C_Cpp.clang_format_fallbackStyle": "Google",
-  "workbench.activityBar.location": "bottom",
-  "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "top",
+  "supermaven.otherWarning": false,
 }
