@@ -1,4 +1,39 @@
 return {
+  {
+    "rose-pine/neovim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("rose-pine").setup({
+        variant = "auto",
+        styles = {
+          transparency = true,
+        },
+      })
+    end,
+  },
+  {
+    "navarasu/onedark.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("onedark").setup({
+        style = "warmer",
+        transparent = true,
+      })
+    end,
+  },
+  {
+    "olivercederborg/poimandres.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("poimandres").setup({
+        disable_background = true,
+        bold_vert_split = false,
+      })
+    end,
+  },
   { "nyoom-engineering/oxocarbon.nvim" },
   { "sainnhe/gruvbox-material" },
   {
@@ -43,9 +78,12 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
+      -- colorscheme = "poimandres",
+      colorscheme = "rose-pine-moon",
       -- colorscheme = "cyberdream",
       -- colorscheme = "catppuccin",
-      colorscheme = "catppuccin-macchiato",
+      -- colorscheme = "catppuccin-macchiato",
+      -- colorscheme = "catppuccin-frappe",
       -- colorscheme = "gruvbox",
       -- colorscheme = "gruvbox-material",
       -- colorscheme = "github_light_default",

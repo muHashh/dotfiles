@@ -42,17 +42,15 @@
   // "editor.cursorSmoothCaretAnimation": "on",
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.fontWeight": "bold",
-  "workbench.layoutControl.enabled": false,
   "editor.fontSize": 12,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
   "telemetry.telemetryLevel": "off",
   "gitlens.telemetry.enabled": false,
-  "editor.fontFamily":  "JetBrainsMono Nerd Font",
-  "window.commandCenter": false,
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "workbench.colorTheme": "1337 Modern",
+  "workbench.colorTheme": "Cursor like theme",
   "vim.smartRelativeLine": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
@@ -70,4 +68,6 @@
   "C_Cpp.clang_format_fallbackStyle": "Google",
   "workbench.activityBar.location": "top",
   "supermaven.otherWarning": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.navigationControl.enabled": false,
 }

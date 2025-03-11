@@ -54,6 +54,7 @@ alias fd='fd -I'
 alias dots='$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias cdto='cd; cd $(fd --type d --hidden . Desktop Documents .config workspace | fzf)'
 alias r="ranger"
+alias aider="aider --model groq/deepseek-r1-distill-qwen-32b"
 
 # eval "$(starship init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
@@ -72,3 +73,6 @@ export PATH="$PATH:/Users/hassan/.local/bin"
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/hassan/.cache/lm-studio/bin"
+
+# secrets
+source ~/.secrets
