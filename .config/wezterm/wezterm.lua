@@ -1,8 +1,8 @@
 -- Initialize Configuration
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
-local opacity = 0.85
-local transparent_bg = "rgba(22, 24, 26, " .. opacity .. ")"
+local opacity = 0.95
+local transparent_bg = "rgba(5, 5, 5, " .. opacity .. ")"
 
 -- Font
 config.font = wezterm.font_with_fallback({
@@ -28,8 +28,21 @@ config.cursor_blink_rate = 250
 config.window_padding = { left = 5, right = 5, top = 5, bottom = 0 }
 
 -- Colors
-config.colors = require("cyberdream")
+-- local rose-pine theme
+config.color_scheme = "rose-pine"
+config.colors = wezterm.color.get_builtin_schemes()["rose-pine"]
+
+-- rose pine plugin theme
+-- local theme = wezterm.plugin.require("https://github.com/neapsix/wezterm").main
+-- config.colors = theme.colors()
+-- if using fancy tab bar
+-- config.window_frame = theme.window_frame()
+
+-- cyberdream theme
+-- config.colors = require("cyberdream")
+
 config.force_reverse_video_cursor = true
+config.colors.background = transparent_bg
 
 -- Shell
 -- config.default_prog = { "tmux", "a" }

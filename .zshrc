@@ -53,7 +53,8 @@ alias la='eza -la'
 alias fd='fd -I'
 alias dots='$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias cdto='cd; cd $(fd --type d --hidden . Desktop Documents .config workspace | fzf)'
-alias r="ranger"
+# alias r="ranger"
+alias fm="yazi"
 alias aider="aider --model groq/deepseek-r1-distill-qwen-32b"
 
 # eval "$(starship init zsh)"
