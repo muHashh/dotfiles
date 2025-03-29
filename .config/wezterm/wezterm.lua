@@ -95,11 +95,10 @@ config.keys = {
 	{ mods = "CMD|SHIFT", key = "RightArrow", action = wezterm.action.ActivateTabRelative(1) },
 	{ mods = "CMD", key = "d", action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
 	{ mods = "CMD|SHIFT", key = "d", action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }) },
-	{ key = "h", mods = "LEADER", action = wezterm.action.ActivatePaneDirection("Left") },
-	{ key = "j", mods = "LEADER", action = wezterm.action.ActivatePaneDirection("Down") },
-	{ key = "k", mods = "LEADER", action = wezterm.action.ActivatePaneDirection("Up") },
-	{ key = "l", mods = "LEADER", action = wezterm.action.ActivatePaneDirection("Right") },
-	{ key = "-", mods = "LEADER", action = wezterm.action.ActivatePaneDirection("Right") },
+	{ mods = "CTRL", key = "h", action = wezterm.action.ActivatePaneDirection("Left") },
+	{ mods = "CTRL", key = "l", action = wezterm.action.ActivatePaneDirection("Right") },
+	{ mods = "CTRL", key = "j", action = wezterm.action.ActivatePaneDirection("Down") },
+	{ mods = "CTRL", key = "k", action = wezterm.action.ActivatePaneDirection("Up") },
 }
 
 config.mouse_bindings = {
