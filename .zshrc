@@ -57,7 +57,11 @@ alias cdto='cd; cd $(fd --type d --hidden . Desktop Documents .config workspace 
 alias fm="yazi"
 alias aider="aider --model groq/deepseek-r1-distill-qwen-32b"
 
-# eval "$(starship init zsh)"
+# prompts
+export PS1=$'\n'"%F{2} %*%F %F{default}%B%5~ %F{default}%B"$'\n'"$ "
+# starship
+eval "$(starship init zsh)"
+
 eval "$(zoxide init --cmd cd zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -66,8 +70,6 @@ eval "$(zoxide init --cmd cd zsh)"
 export PATH=$PATH:/Users/hassan/.spicetify
 source $HOME/.zsecs
 
-# prompt
-export PS1=$'\n'"%F{2} %*%F %F{default}%B%5~ %F{default}%B"$'\n'"$ "
 
 # Created by `pipx` on 2024-09-03 22:20:11
 export PATH="$PATH:/Users/hassan/.local/bin"

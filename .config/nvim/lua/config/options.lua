@@ -18,3 +18,6 @@
 
 -- remove annoying jump animations when moving around
 vim.g.snacks_animate = false
+
+-- use system clipboard
+vim.opt.clipboard = "unnamedplus"

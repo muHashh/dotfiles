@@ -4,6 +4,12 @@ local config = wezterm.config_builder()
 local opacity = 0.95
 local transparent_bg = "rgba(5, 5, 5, " .. opacity .. ")"
 
+-- Add to PATH
+local more_paths = ":/opt/homebrew/bin"
+config.set_environment_variables = {
+	PATH = os.getenv("PATH") .. more_paths,
+}
+
 -- Font
 config.font = wezterm.font_with_fallback({
 	{
@@ -45,7 +51,7 @@ config.force_reverse_video_cursor = true
 config.colors.background = transparent_bg
 
 -- Shell
--- config.default_prog = { "tmux", "a" }
+config.default_prog = { "tmux", "new-session", "-A", "-s", "main" }
 
 -- Tabs
 config.enable_tab_bar = true
