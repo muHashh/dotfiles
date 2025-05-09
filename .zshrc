@@ -68,7 +68,6 @@ eval "$(zoxide init --cmd cd zsh)"
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 #
 export PATH=$PATH:/Users/hassan/.spicetify
-source $HOME/.zsecs
 
 
 # Created by `pipx` on 2024-09-03 22:20:11
@@ -78,4 +77,4 @@ export PATH="$PATH:/Users/hassan/.local/bin"
 export PATH="$PATH:/Users/hassan/.cache/lm-studio/bin"
 
 # secrets
-source ~/.secrets
+source $HOME/.secrets

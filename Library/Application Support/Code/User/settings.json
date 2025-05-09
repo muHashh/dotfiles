@@ -15,7 +15,6 @@
     // "terminal.background": "#191723",
     // "panel.background": "#191723",
   },
-  "workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons",
   "[python]": {
     "editor.formatOnType": true
   },
@@ -27,7 +26,7 @@
   "editor.fontLigatures": true,
   "git.openRepositoryInParentFolders": "always",
   "github.copilot.enable": {
-    "*": true,
+    "*": false,
     "plaintext": false,
     "markdown": false,
     "scminput": false
@@ -50,7 +49,7 @@
   "gitlens.telemetry.enabled": false,
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "workbench.colorTheme": "Monokai Pro (Filter Ristretto)",
+  "workbench.colorTheme": "Maron Theme: Scary Monsters Forest [Operator]",
   "vim.smartRelativeLine": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
@@ -70,11 +69,13 @@
   "workbench.layoutControl.enabled": false,
   "workbench.navigationControl.enabled": false,
   "workbench.activityBar.location": "top",
-  "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
+  "github.copilot.selectedCompletionModel": "",
   "leetcode.hint.configWebviewMarkdown": false,
   "leetcode.hint.commandShortcut": false,
   "leetcode.defaultLanguage": "cpp",
   "tabnine.experimentalAutoImports": true,
   "continue.enableTabAutocomplete": false,
   "window.commandCenter": false,
+  "editor.lineNumbers": "relative",
+  "everforest.darkWorkbench": "high-contrast",
 }

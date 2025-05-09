@@ -2,7 +2,6 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 local opacity = 0.95
-local transparent_bg = "rgba(5, 5, 5, " .. opacity .. ")"
 
 -- Add to PATH
 local more_paths = ":/opt/homebrew/bin"
@@ -34,9 +33,16 @@ config.cursor_blink_rate = 250
 config.window_padding = { left = 5, right = 5, top = 5, bottom = 0 }
 
 -- Colors
+
+-- Monokai pro ristretto
+-- config.color_scheme = "Monokai Pro Ristretto (Gogh)"
+-- config.colors = wezterm.color.get_builtin_schemes()["Monokai Pro Ristretto (Gogh)"]
+-- local transparent_bg = "rgba(38, 34, 33, " .. opacity .. ")"
+
 -- local rose-pine theme
 config.color_scheme = "rose-pine"
 config.colors = wezterm.color.get_builtin_schemes()["rose-pine"]
+local transparent_bg = "rgba(5, 5, 5, " .. opacity .. ")"
 
 -- rose pine plugin theme
 -- local theme = wezterm.plugin.require("https://github.com/neapsix/wezterm").main

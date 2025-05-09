@@ -78,14 +78,15 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
+      -- colorscheme = "gruvbox-material",
+      colorscheme = "rose-pine",
+      -- colorscheme = "rose-pine-moon",
       -- colorscheme = "poimandres",
-      colorscheme = "rose-pine-moon",
       -- colorscheme = "cyberdream",
       -- colorscheme = "catppuccin",
       -- colorscheme = "catppuccin-macchiato",
       -- colorscheme = "catppuccin-frappe",
       -- colorscheme = "gruvbox",
-      -- colorscheme = "gruvbox-material",
       -- colorscheme = "github_light_default",
       -- colorscheme = "oxocarbon",
       -- colorscheme = "github_dark_default",
