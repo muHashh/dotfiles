@@ -25,12 +25,6 @@
   "files.watcherExclude": {},
   "editor.fontLigatures": true,
   "git.openRepositoryInParentFolders": "always",
-  "github.copilot.enable": {
-    "*": false,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
   // "C_Cpp.intelliSenseEngine": "disabled",
   // "[cpp]": {
   //   "editor.wordBasedSuggestions": false,
@@ -78,4 +72,11 @@
   "window.commandCenter": false,
   "editor.lineNumbers": "relative",
   "everforest.darkWorkbench": "high-contrast",
+  "editor.wordWrap": "on",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
 }

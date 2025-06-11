@@ -53,8 +53,8 @@ alias la='eza -la'
 alias fd='fd -I'
 alias dots='$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias cdto='cd; cd $(fd --type d --hidden . Desktop Documents .config workspace | fzf)'
-# alias r="ranger"
-alias fm="yazi"
+alias fm=". ranger"
+# alias fm="yazi"
 alias aider="aider --model groq/deepseek-r1-distill-qwen-32b"
 
 # prompts
@@ -78,3 +78,6 @@ export PATH="$PATH:/Users/hassan/.cache/lm-studio/bin"
 
 # secrets
 source $HOME/.secrets
+
+# Added by Windsurf
+export PATH="/Users/hassan/.codeium/windsurf/bin:$PATH"

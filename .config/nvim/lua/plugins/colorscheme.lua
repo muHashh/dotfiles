@@ -12,6 +12,7 @@ return {
       })
     end,
   },
+
   {
     "navarasu/onedark.nvim",
     lazy = false,
@@ -23,6 +24,7 @@ return {
       })
     end,
   },
+
   {
     "olivercederborg/poimandres.nvim",
     lazy = false,
@@ -34,8 +36,11 @@ return {
       })
     end,
   },
+
   { "nyoom-engineering/oxocarbon.nvim" },
+
   { "sainnhe/gruvbox-material" },
+
   {
     "catppuccin/nvim",
     name = "catppuccin",
@@ -48,7 +53,6 @@ return {
   },
 
   { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = { transparent_mode = true } },
-  -- { "EdenEast/nightfox.nvim", name = "knightfox", opts = { options = { transparent = true } } },
   {
     "projekt0n/github-nvim-theme",
     lazy = false,
@@ -76,11 +80,34 @@ return {
   },
 
   {
+    "EdenEast/nightfox.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      options = {
+        transparent = true,
+      },
+    },
+  },
+
+  {
+    "diegoulloao/neofusion.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent_mode = true,
+    },
+  },
+
+  {
     "LazyVim/LazyVim",
     opts = {
+      -- colorscheme = "neofusion",
+      -- colorscheme = "nightfox",
+      -- colorscheme = "nordfox",
       -- colorscheme = "gruvbox-material",
-      colorscheme = "rose-pine",
-      -- colorscheme = "rose-pine-moon",
+      -- colorscheme = "rose-pine",
+      colorscheme = "rose-pine-moon",
       -- colorscheme = "poimandres",
       -- colorscheme = "cyberdream",
       -- colorscheme = "catppuccin",
