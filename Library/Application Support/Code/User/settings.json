@@ -34,7 +34,7 @@
   // "C_Cpp.intelliSenseEngineFallback": "enabled",
   // "editor.cursorSmoothCaretAnimation": "on",
   "terminal.integrated.fontSize": 12,
-  "terminal.integrated.fontWeight": "bold",
+  // "terminal.integrated.fontWeight": "bold",
   "editor.fontSize": 12,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
@@ -47,7 +47,7 @@
   "vim.smartRelativeLine": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "editor.fontWeight": "bold",
+  // "editor.fontWeight": "bold",
   "leetcode.workspaceFolder": "/Users/hassan/.leetcode",
   "cmake.pinnedCommands": [
     "workbench.action.tasks.configureTaskRunner",
@@ -74,9 +74,20 @@
   "everforest.darkWorkbench": "high-contrast",
   "editor.wordWrap": "on",
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": false,
-    "scminput": false
+    "scminput": false,
+    "json": false
   },
+  "kilo-code.allowedCommands": [
+    "npm test",
+    "npm install",
+    "tsc",
+    "git log",
+    "git diff",
+    "git show"
+  ],
+  "kilo-code.deniedCommands": [],
+  "github.copilot.advanced": {},
 }

@@ -20480,13 +20480,13 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.74057906866073608</real>
+				<real>0.59329217672348022</real>
 				<key>Color Space</key>
 				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.74070209264755249</real>
+				<real>0.593292236328125</real>
 				<key>Red Component</key>
-				<real>0.74667984247207642</real>
+				<real>0.59329217672348022</real>
 			</dict>
 			<key>Ansi 8 Color (Dark)</key>
 			<dict>
@@ -21418,7 +21418,7 @@ The script should do this: \(ai.prompt)</string>
 			<key>Non-ASCII Ligatures</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>JetBrainsMonoNF-Bold 12</string>
+			<string>JetBrainsMonoNFP-Regular 13</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
 			<key>Open Toolbelt</key>

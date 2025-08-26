@@ -1,4 +1,5 @@
 format = """
+$os\
 $directory\
 $git_branch\
 $git_status\
@@ -32,12 +33,14 @@ foam = '#9ccfd8'
 iris = '#c4a7e7'
 
 [os]
+format = "[](fg:overlay)[ $symbol]($style)[](fg:overlay) "
 disabled = false
+style = "bg:overlay fg:pine"
 
 [directory]
 format = "[](fg:overlay)[ $path ]($style)[](fg:overlay) "
 style = "bg:overlay fg:pine"
-truncation_length = 3
+truncation_length = 5
 truncation_symbol = "…/"
 
 [directory.substitutions]
@@ -72,7 +75,7 @@ behind = '[⇣\(${count}\)](bg:overlay fg:rose)'
 
 [time]
 disabled = false
-format = " [](fg:overlay)[ $time 󰴈 ]($style)[](fg:overlay)"
+format = " [](fg:overlay)[ $time ]($style)[](fg:overlay)"
 style = "bg:overlay fg:rose"
 time_format = "%I:%M%P"
 use_12hr = true

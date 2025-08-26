@@ -56,6 +56,7 @@ alias cdto='cd; cd $(fd --type d --hidden . Desktop Documents .config workspace 
 alias fm=". ranger"
 # alias fm="yazi"
 alias aider="aider --model groq/deepseek-r1-distill-qwen-32b"
+alias cling="cling -l ~/workspace/tmp/cling.cpp"
 
 # prompts
 export PS1=$'\n'"%F{2} %*%F %F{default}%B%5~ %F{default}%B"$'\n'"$ "

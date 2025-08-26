@@ -1,46 +1,189 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
 format = """
-$username\
-$hostname\
+$os\
+$status\
 $directory\
 $git_branch\
-$git_state\
 $git_status\
-$cmd_duration\
-$line_break\
+$fill\
+$golang\
+$nodejs\
+$bun\
+$deno\
 $python\
-$character"""
+$java\
+$zig\
+$rust\
+$c\
+$cmd_duration\
+$time\
+$line_break\
+$character\
+"""
+
+# palette = "rose-pine"
+add_newline = true
+
+# [palettes.rose-pine]
+# foreground = '#D9E0EE'
+# background = '#1E1E2E'
+# current_line = '#2E2E3E'
+# primary = '#313244'
+# box = '#2E2E3E'
+# blue = '#31748f'
+# cyan = '#9ccfd8'
+# green = '#A6E3A1'
+# orange = '#ebbcba'
+# pink = '#F5BDE6'
+# purple = '#c4a7e7'
+# red = '#F38BA8'
+# yellow = '#f6c177'
+# status = '#eb6f92'
+
+
+[os]
+format = '(fg:bright-black)[](fg:white)[$symbol ](fg:black bg:white)[](fg:white)'
+disabled = false
+
+[status]
+format = " (fg:bright-black)[](fg:red)[](fg:black bg:red)[](fg:red bg:bright-black)[ $status](fg:white bg:bright-black)[](fg:bright-black)"
+pipestatus = true
+pipestatus_separator = "-"
+pipestatus_segment_format = "$status"
+pipestatus_format = " (fg:bright-black)[](fg:red)[](fg:black bg:red)[](fg:red bg:bright-black)[ $pipestatus](fg:white bg:bright-black)[](fg:bright-black)"
+disabled = false
 
 [directory]
-style = "blue"
-
-[character]
-success_symbol = "[❯](purple)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
+format = ' (fg:bright-black)[](fg:cyan)[󰷏 ](fg:black bg:cyan)[](fg:cyan bg:bright-black)[ $read_only$truncation_symbol$path](fg:white bg:bright-black)[](fg:bright-black)'
+home_symbol = " ~"
+truncation_symbol = ' '
+truncation_length = 5
+read_only = '󱧵 '
+read_only_style = ''
 
 [git_branch]
-format = "[$branch]($style)"
-style = "bright-black"
+format = ' (fg:bright-black)[](fg:green)[$symbol ](fg:black bg:green)[](fg:green bg:bright-black)[ $branch](fg:white bg:bright-black)'
+symbol = ''
 
 [git_status]
-format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
-style = "cyan"
-conflicted = "​"
-untracked = "​"
-modified = "​"
-staged = "​"
-renamed = "​"
-deleted = "​"
-stashed = "≡"
+format = '[$all_status](fg:green bg:bright-black)[](fg:bright-black)'
+conflicted = ' ='
+up_to_date = ''
+untracked = ' ?${count}'
+stashed = ' $'
+modified = ' !${count}'
+staged = ' +'
+renamed = ' »'
+deleted = ' ✘'
+ahead = ' ⇡${count}'
+diverged = ' ⇕⇡${ahead_count}⇣${behind_count}'
+behind = ' ⇣${count}'
 
-[git_state]
-format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "bright-black"
+[nodejs]
+format = ' (fg:bright-black)[](fg:green)[$symbol ](fg:black bg:green)[](fg:green bg:bright-black)[ $version](fg:white bg:bright-black)[](fg:bright-black)'
+symbol = '󰎙 Node.js'
 
-[cmd_duration]
-format = "[$duration]($style) "
-style = "yellow"
+[bun]
+format = ' (fg:bright-black)[](fg:green)[$symbol ](fg:black bg:green)[](fg:green bg:bright-black)[ $version](fg:white bg:bright-black)[](fg:bright-black)'
+symbol = ' Bun'
+
+[deno]
+format = ' (fg:bright-black)[](fg:purple)[$symbol ](fg:black bg:purple)[](fg:purple bg:bright-black)[ $version](fg:white bg:bright-black)[](fg:bright-black)'
+symbol = '🦕 Deno'
+
+[zig]
+format = ' (fg:bright-black)[](fg:blue)[$symbol ](fg:black bg:blue)[](fg:blue bg:bright-black)[ $version](fg:white bg:bright-black)[](fg:bright-black)'
+symbol = '⚡️ Zig'
+
+[rust]
+format = ' (fg:bright-black)[](fg:yellow)[$symbol ](fg:black bg:yellow)[](fg:yellow bg:bright-black)[ $version](fg:white bg:bright-black)[](fg:bright-black)'
+symbol = ' Rust'
 
 [python]
-format = "[$virtualenv]($style) "
-style = "bright-black"
+format = ' (fg:bright-black)[](fg:green)[$symbol ](fg:black bg:green)[](fg:green bg:bright-black)[ (${version} )(\($virtualenv\) )](fg:white bg:bright-black)[](fg:bright-black)'
+symbol = ' python'
+
+[java]
+format = ' (fg:bright-black)[](fg:red)[$symbol ](fg:black bg:red)[](fg:red bg:bright-black)[ $version](fg:white bg:bright-black)[](fg:bright-black)'
+symbol = ' Java'
+
+[golang]
+format = ' (fg:bright-black)[](fg:red)[$symbol ](fg:black bg:red)[](fg:red bg:bright-black)[ $version](fg:white bg:bright-black)[](fg:bright-black)'
+symbol = '󰑮 Go'
+
+[c]
+format = ' (fg:bright-black)[](fg:blue)[$symbol ](fg:black bg:blue)[](fg:blue bg:bright-black)[ $version](fg:white bg:bright-black)[](fg:bright-black)'
+symbol = ' C'
+
+[fill]
+symbol = ' '
+style = 'fg:bright-black'
+
+[cmd_duration]
+min_time = 500
+format = ' (fg:bright-black)[](fg:yellow)[ ](fg:black bg:yellow)[](fg:yellow bg:bright-black)[ $duration](fg:white bg:bright-black)[](fg:bright-black)'
+
+[time]
+format = ' (fg:bright-black)[](fg:white)[󰦖 ](fg:black bg:white)[](fg:white bg:bright-black)[ $time](fg:white bg:bright-black)[](fg:bright-black)'
+time_format = '%H:%M'
+disabled = false
+
+[username]
+format = ' (fg:bright-black)[](fg:yellow)[ ](fg:black bg:yellow)[](fg:yellow bg:bright-black)[ $user](fg:white bg:bright-black)[](fg:bright-black) '
+show_always = true
+
+[character]
+format = '[$symbol ](fg:bright-black) '
+success_symbol = '[](fg:bold white)'
+error_symbol = '[](fg:bold red)'
+
+[profiles]
+transient = """$character"""
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CachyOS = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = ""
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+Nobara = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+Windows = "󰍲 "
