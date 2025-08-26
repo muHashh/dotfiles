@@ -47,7 +47,7 @@ format = '(fg:bright-black)[](fg:white)[$symbol ](fg:black bg:white)[](fg:
 disabled = false
 
 [status]
-format = " (fg:bright-black)[](fg:red)[](fg:black bg:red)[](fg:red bg:bright-black)[ $status](fg:white bg:bright-black)[](fg:bright-black)"
+format = " (fg:bright-black)[](fg:red)[ ](fg:black bg:red)[](fg:red bg:bright-black)[ $status](fg:white bg:bright-black)[](fg:bright-black)"
 pipestatus = true
 pipestatus_separator = "-"
 pipestatus_segment_format = "$status"
