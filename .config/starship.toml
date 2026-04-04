@@ -43,7 +43,7 @@ add_newline = true
 
 
 [os]
-format = '(fg:bright-black)[](fg:white)[$symbol ](fg:black bg:white)[](fg:white)'
+format = '(fg:bright-black)[](fg:bright-white)[$symbol ](fg:black bg:bright-white)[](fg:bright-white)'
 disabled = false
 
 [status]
@@ -55,7 +55,7 @@ pipestatus_format = " (fg:bright-black)[](fg:red)[](fg:black bg:red)[](
 disabled = false
 
 [directory]
-format = ' (fg:bright-black)[](fg:cyan)[󰷏 ](fg:black bg:cyan)[](fg:cyan bg:bright-black)[ $read_only$truncation_symbol$path](fg:white bg:bright-black)[](fg:bright-black)'
+format = ' (fg:bright-black)[](fg:blue)[󰷏 ](fg:black bg:blue)[](fg:blue bg:bright-black)[ $read_only$truncation_symbol$path](fg:white bg:bright-black)[](fg:bright-black)'
 home_symbol = " ~"
 truncation_symbol = ' '
 truncation_length = 5
@@ -134,7 +134,7 @@ format = ' (fg:bright-black)[](fg:yellow)[ ](fg:black bg:yellow)[](fg:y
 show_always = true
 
 [character]
-format = '[$symbol ](fg:bright-black) '
+format = '[$symbol](fg:bright-black) '
 success_symbol = '[](fg:bold white)'
 error_symbol = '[](fg:bold red)'
 

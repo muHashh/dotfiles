@@ -39,6 +39,8 @@ source <(fzf --zsh)
 ## exports
 export PATH="~/.spicetify:$PATH"
 export EDITOR="nvim"
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$PATH"
 
 ## key bindings
 bindkey "^[[1;3C" forward-word
@@ -46,10 +48,10 @@ bindkey "^[[1;3D" backward-word
 
 ## aliases
 alias cat='bat --paging=never'
-alias ll='ls -l --group-directories-first'
-alias eza='eza --icons'
+alias eza='eza --icons --color never'
 alias ls='eza'
-alias la='eza -la'
+alias ll='ls -l --group-directories-first --sort=created -r'
+alias la='ls -la'
 alias fd='fd -I'
 alias dots='$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias cdto='cd; cd $(fd --type d --hidden . Desktop Documents .config workspace | fzf)'
@@ -57,6 +59,8 @@ alias fm=". ranger"
 # alias fm="yazi"
 alias aider="aider --model groq/deepseek-r1-distill-qwen-32b"
 alias cling="cling -l ~/workspace/tmp/cling.cpp"
+alias python="python3"
+alias pip="pip3"
 
 # prompts
 export PS1=$'\n'"%F{2} %*%F %F{default}%B%5~ %F{default}%B"$'\n'"$ "

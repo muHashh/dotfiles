@@ -44,8 +44,8 @@ return {
   {
     "catppuccin/nvim",
     name = "catppuccin",
-    lazy = true,
-    -- priority = 1000,
+    lazy = false,
+    priority = 1000,
     opts = {
       flavour = "macchiato",
       transparent_background = true,
@@ -53,6 +53,7 @@ return {
   },
 
   { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = { transparent_mode = true } },
+
   {
     "projekt0n/github-nvim-theme",
     lazy = false,
@@ -99,15 +100,29 @@ return {
     },
   },
 
+  -- {
+  --   "metalelf0/black-metal-theme-neovim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   config = function()
+  --     require("black-metal").setup({
+  --       -- optional configuration here
+  --     })
+  --     require("black-metal").load()
+  --   end,
+  -- },
+
   {
     "LazyVim/LazyVim",
     opts = {
+      -- colorscheme = "bathory",
       -- colorscheme = "neofusion",
       -- colorscheme = "nightfox",
       -- colorscheme = "nordfox",
       -- colorscheme = "gruvbox-material",
+      colorscheme = "rose-pine-main",
       -- colorscheme = "rose-pine",
-      colorscheme = "rose-pine-moon",
+      -- colorscheme = "rose-pine-moon",
       -- colorscheme = "poimandres",
       -- colorscheme = "cyberdream",
       -- colorscheme = "catppuccin",

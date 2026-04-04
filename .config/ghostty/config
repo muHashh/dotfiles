@@ -3,9 +3,20 @@ font-family = "JetBrainsMono Nerd Font Propo"
 font-family-bold = "JetBrainsMono Nerd Font Propo Bold"
 font-family-italic = "JetBrainsMono Nerd Font Propo Italic"
 font-family-bold-italic = "JetBrainsMono Nerd Font Propo Bold Italic"
+font-thicken = true
+font-thicken-strength = 32
 
-theme = "Black Metal (Bathory)"
+#theme = "Black Metal (Bathory)"
+config-file = ?auto/theme.ghostty
 
 macos-titlebar-style = "tabs"
 
 shell-integration = zsh
+
+window-colorspace = display-p3
+
+shell-integration-features = no-cursor
+
+window-theme = system
+
+link-url = true
