@@ -20,3 +20,6 @@ shell-integration-features = no-cursor
 window-theme = system
 
 link-url = true
+
+# Example: Map reload to Command + R
+keybind = cmd+r=reload_config

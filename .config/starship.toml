@@ -43,19 +43,19 @@ add_newline = true
 
 
 [os]
-format = '(fg:bright-black)[](fg:bright-white)[$symbol ](fg:black bg:bright-white)[](fg:bright-white)'
+format = '(fg:black)[](fg:white)[$symbol ](fg:black bg:white)[](fg:white)'
 disabled = false
 
 [status]
-format = " (fg:bright-black)[](fg:red)[ ](fg:black bg:red)[](fg:red bg:bright-black)[ $status](fg:white bg:bright-black)[](fg:bright-black)"
+format = " (fg:black)[](fg:red)[ ](fg:black bg:red)[](fg:red bg:black)[ $status](fg:white bg:black)[](fg:black)"
 pipestatus = true
 pipestatus_separator = "-"
 pipestatus_segment_format = "$status"
-pipestatus_format = " (fg:bright-black)[](fg:red)[](fg:black bg:red)[](fg:red bg:bright-black)[ $pipestatus](fg:white bg:bright-black)[](fg:bright-black)"
+pipestatus_format = " (fg:black)[](fg:red)[](fg:black bg:red)[](fg:red bg:black)[ $pipestatus](fg:white bg:black)[](fg:black)"
 disabled = false
 
 [directory]
-format = ' (fg:bright-black)[](fg:blue)[󰷏 ](fg:black bg:blue)[](fg:blue bg:bright-black)[ $read_only$truncation_symbol$path](fg:white bg:bright-black)[](fg:bright-black)'
+format = ' (fg:black)[](fg:blue)[󰷏 ](fg:black bg:blue)[](fg:blue bg:black)[ $read_only$truncation_symbol$path](fg:white bg:black)[](fg:black)'
 home_symbol = " ~"
 truncation_symbol = ' '
 truncation_length = 5
@@ -63,11 +63,11 @@ read_only = '󱧵 '
 read_only_style = ''
 
 [git_branch]
-format = ' (fg:bright-black)[](fg:green)[$symbol ](fg:black bg:green)[](fg:green bg:bright-black)[ $branch](fg:white bg:bright-black)'
+format = ' (fg:black)[](fg:green)[$symbol ](fg:black bg:green)[](fg:green bg:black)[ $branch](fg:white bg:black)'
 symbol = ''
 
 [git_status]
-format = '[$all_status](fg:green bg:bright-black)[](fg:bright-black)'
+format = '[$all_status](fg:green bg:black)[](fg:black)'
 conflicted = ' ='
 up_to_date = ''
 untracked = ' ?${count}'
@@ -81,60 +81,60 @@ diverged = ' ⇕⇡${ahead_count}⇣${behind_count}'
 behind = ' ⇣${count}'
 
 [nodejs]
-format = ' (fg:bright-black)[](fg:green)[$symbol ](fg:black bg:green)[](fg:green bg:bright-black)[ $version](fg:white bg:bright-black)[](fg:bright-black)'
+format = ' (fg:black)[](fg:green)[$symbol ](fg:black bg:green)[](fg:green bg:black)[ $version](fg:white bg:black)[](fg:black)'
 symbol = '󰎙 Node.js'
 
 [bun]
-format = ' (fg:bright-black)[](fg:green)[$symbol ](fg:black bg:green)[](fg:green bg:bright-black)[ $version](fg:white bg:bright-black)[](fg:bright-black)'
+format = ' (fg:black)[](fg:green)[$symbol ](fg:black bg:green)[](fg:green bg:black)[ $version](fg:white bg:black)[](fg:black)'
 symbol = ' Bun'
 
 [deno]
-format = ' (fg:bright-black)[](fg:purple)[$symbol ](fg:black bg:purple)[](fg:purple bg:bright-black)[ $version](fg:white bg:bright-black)[](fg:bright-black)'
+format = ' (fg:black)[](fg:purple)[$symbol ](fg:black bg:purple)[](fg:purple bg:black)[ $version](fg:white bg:black)[](fg:black)'
 symbol = '🦕 Deno'
 
 [zig]
-format = ' (fg:bright-black)[](fg:blue)[$symbol ](fg:black bg:blue)[](fg:blue bg:bright-black)[ $version](fg:white bg:bright-black)[](fg:bright-black)'
+format = ' (fg:black)[](fg:blue)[$symbol ](fg:black bg:blue)[](fg:blue bg:black)[ $version](fg:white bg:black)[](fg:black)'
 symbol = '⚡️ Zig'
 
 [rust]
-format = ' (fg:bright-black)[](fg:yellow)[$symbol ](fg:black bg:yellow)[](fg:yellow bg:bright-black)[ $version](fg:white bg:bright-black)[](fg:bright-black)'
+format = ' (fg:black)[](fg:yellow)[$symbol ](fg:black bg:yellow)[](fg:yellow bg:black)[ $version](fg:white bg:black)[](fg:black)'
 symbol = ' Rust'
 
 [python]
-format = ' (fg:bright-black)[](fg:green)[$symbol ](fg:black bg:green)[](fg:green bg:bright-black)[ (${version} )(\($virtualenv\) )](fg:white bg:bright-black)[](fg:bright-black)'
+format = ' (fg:black)[](fg:green)[$symbol ](fg:black bg:green)[](fg:green bg:black)[ (${version} )(\($virtualenv\) )](fg:white bg:black)[](fg:black)'
 symbol = ' python'
 
 [java]
-format = ' (fg:bright-black)[](fg:red)[$symbol ](fg:black bg:red)[](fg:red bg:bright-black)[ $version](fg:white bg:bright-black)[](fg:bright-black)'
+format = ' (fg:black)[](fg:red)[$symbol ](fg:black bg:red)[](fg:red bg:black)[ $version](fg:white bg:black)[](fg:black)'
 symbol = ' Java'
 
 [golang]
-format = ' (fg:bright-black)[](fg:red)[$symbol ](fg:black bg:red)[](fg:red bg:bright-black)[ $version](fg:white bg:bright-black)[](fg:bright-black)'
+format = ' (fg:black)[](fg:red)[$symbol ](fg:black bg:red)[](fg:red bg:black)[ $version](fg:white bg:black)[](fg:black)'
 symbol = '󰑮 Go'
 
 [c]
-format = ' (fg:bright-black)[](fg:blue)[$symbol ](fg:black bg:blue)[](fg:blue bg:bright-black)[ $version](fg:white bg:bright-black)[](fg:bright-black)'
+format = ' (fg:black)[](fg:blue)[$symbol ](fg:black bg:blue)[](fg:blue bg:black)[ $version](fg:white bg:black)[](fg:black)'
 symbol = ' C'
 
 [fill]
 symbol = ' '
-style = 'fg:bright-black'
+style = 'fg:black'
 
 [cmd_duration]
 min_time = 500
-format = ' (fg:bright-black)[](fg:yellow)[ ](fg:black bg:yellow)[](fg:yellow bg:bright-black)[ $duration](fg:white bg:bright-black)[](fg:bright-black)'
+format = ' (fg:black)[](fg:yellow)[ ](fg:black bg:yellow)[](fg:yellow bg:black)[ $duration](fg:white bg:black)[](fg:black)'
 
 [time]
-format = ' (fg:bright-black)[](fg:white)[󰦖 ](fg:black bg:white)[](fg:white bg:bright-black)[ $time](fg:white bg:bright-black)[](fg:bright-black)'
+format = ' (fg:black)[](fg:white)[󰦖 ](fg:black bg:white)[](fg:white bg:black)[ $time](fg:white bg:black)[](fg:black)'
 time_format = '%H:%M'
 disabled = false
 
 [username]
-format = ' (fg:bright-black)[](fg:yellow)[ ](fg:black bg:yellow)[](fg:yellow bg:bright-black)[ $user](fg:white bg:bright-black)[](fg:bright-black) '
+format = ' (fg:black)[](fg:yellow)[ ](fg:black bg:yellow)[](fg:yellow bg:black)[ $user](fg:white bg:black)[](fg:black) '
 show_always = true
 
 [character]
-format = '[$symbol](fg:bright-black) '
+format = '[$symbol](fg:black) '
 success_symbol = '[](fg:bold white)'
 error_symbol = '[](fg:bold red)'
 
