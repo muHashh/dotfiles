@@ -2,9 +2,13 @@
   "workbench.startupEditor": "none",
   "editor.minimap.enabled": false,
   "workbench.colorCustomizations": {
-    "focusBorder": "#00000000",
-    "statusBar.focusBorder": "#00000000",
-    "activityBar.activeFocusBorder": "#00000000",
+    // "focusBorder": "#00000000",
+    // "statusBar.focusBorder": "#00000000",
+    // "activityBar.activeFocusBorder": "#00000000",
+    "[Carbonfox]": {
+        "tab.activeBorder": "#161616",
+        // "tab.activeBorderTop": "#161616"
+    }
     // "editor.background": "#121212",
     // "tab.activeBackground": "#121212",
     // "tab.activeBorderTop": "#121212",
@@ -92,5 +96,5 @@
   "breadcrumbs.enabled": false,
   "editor.padding.top": 10,
   "workbench.statusBar.visible": true,
-  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.colorTheme": "Carbonfox",
 }
