@@ -7,6 +7,7 @@
     // "activityBar.activeFocusBorder": "#00000000",
     "[Carbonfox]": {
         "tab.activeBorder": "#161616",
+        "terminal.background": "#0d0d0d",
         // "tab.activeBorderTop": "#161616"
     }
     // "editor.background": "#121212",
@@ -97,4 +98,5 @@
   "editor.padding.top": 10,
   "workbench.statusBar.visible": true,
   "workbench.colorTheme": "Carbonfox",
+  "chatgpt.followUpQueueMode": "steer",
 }

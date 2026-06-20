@@ -1,0 +1,189 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$os\
+$status\
+$directory\
+$git_branch\
+$git_status\
+$fill\
+$golang\
+$nodejs\
+$bun\
+$deno\
+$python\
+$java\
+$zig\
+$rust\
+$c\
+$cmd_duration\
+$time\
+$line_break\
+$character\
+"""
+
+# palette = "rose-pine"
+add_newline = true
+
+# [palettes.rose-pine]
+# foreground = '#D9E0EE'
+# background = '#1E1E2E'
+# current_line = '#2E2E3E'
+# primary = '#313244'
+# box = '#2E2E3E'
+# blue = '#31748f'
+# cyan = '#9ccfd8'
+# green = '#A6E3A1'
+# orange = '#ebbcba'
+# pink = '#F5BDE6'
+# purple = '#c4a7e7'
+# red = '#F38BA8'
+# yellow = '#f6c177'
+# status = '#eb6f92'
+
+
+[os]
+format = '(fg:black)[](fg:white)[$symbol ](fg:black bg:white)[](fg:white)'
+disabled = false
+
+[status]
+format = " (fg:bright-black)[](fg:red)[ ](fg:black bg:red)[](fg:red bg:bright-black)[ $status](fg:white bg:bright-black)[](fg:bright-black)"
+pipestatus = true
+pipestatus_separator = "-"
+pipestatus_segment_format = "$status"
+pipestatus_format = " (fg:bright-black)[](fg:red)[](fg:black bg:red)[](fg:red bg:bright-black)[ $pipestatus](fg:white bg:bright-black)[](fg:bright-black)"
+disabled = false
+
+[directory]
+format = ' (fg:black)[](fg:blue)[󰷏 ](fg:black bg:blue)[](fg:blue bg:bright-black)[ $read_only$truncation_symbol$path](fg:white bg:bright-black)[](fg:bright-black)'
+home_symbol = " ~"
+truncation_symbol = ' '
+truncation_length = 5
+read_only = '󱧵 '
+read_only_style = ''
+
+[git_branch]
+format = ' (fg:black)[](fg:green)[$symbol ](fg:black bg:green)[](fg:green bg:black)[ $branch](fg:white bg:black)'
+symbol = ''
+
+[git_status]
+format = '[$all_status](fg:green bg:black)[](fg:black)'
+conflicted = ' ='
+up_to_date = ''
+untracked = ' ?${count}'
+stashed = ' $'
+modified = ' !${count}'
+staged = ' +'
+renamed = ' »'
+deleted = ' ✘'
+ahead = ' ⇡${count}'
+diverged = ' ⇕⇡${ahead_count}⇣${behind_count}'
+behind = ' ⇣${count}'
+
+[nodejs]
+format = ' (fg:black)[](fg:green)[$symbol ](fg:black bg:green)[](fg:green bg:black)[ $version](fg:white bg:black)[](fg:black)'
+symbol = '󰎙 Node.js'
+
+[bun]
+format = ' (fg:black)[](fg:green)[$symbol ](fg:black bg:green)[](fg:green bg:black)[ $version](fg:white bg:black)[](fg:black)'
+symbol = ' Bun'
+
+[deno]
+format = ' (fg:black)[](fg:purple)[$symbol ](fg:black bg:purple)[](fg:purple bg:black)[ $version](fg:white bg:black)[](fg:black)'
+symbol = '🦕 Deno'
+
+[zig]
+format = ' (fg:black)[](fg:blue)[$symbol ](fg:black bg:blue)[](fg:blue bg:black)[ $version](fg:white bg:black)[](fg:black)'
+symbol = '⚡️ Zig'
+
+[rust]
+format = ' (fg:black)[](fg:yellow)[$symbol ](fg:black bg:yellow)[](fg:yellow bg:black)[ $version](fg:white bg:black)[](fg:black)'
+symbol = ' Rust'
+
+[python]
+format = ' (fg:black)[](fg:green)[$symbol ](fg:black bg:green)[](fg:green bg:black)[ (${version} )(\($virtualenv\) )](fg:white bg:black)[](fg:black)'
+symbol = ' python'
+
+[java]
+format = ' (fg:black)[](fg:red)[$symbol ](fg:black bg:red)[](fg:red bg:black)[ $version](fg:white bg:black)[](fg:black)'
+symbol = ' Java'
+
+[golang]
+format = ' (fg:black)[](fg:red)[$symbol ](fg:black bg:red)[](fg:red bg:black)[ $version](fg:white bg:black)[](fg:black)'
+symbol = '󰑮 Go'
+
+[c]
+format = ' (fg:black)[](fg:blue)[$symbol ](fg:black bg:blue)[](fg:blue bg:black)[ $version](fg:white bg:black)[](fg:black)'
+symbol = ' C'
+
+[fill]
+symbol = ' '
+style = 'fg:black'
+
+[cmd_duration]
+min_time = 500
+format = ' (fg:black)[](fg:yellow)[ ](fg:black bg:yellow)[](fg:yellow bg:black)[ $duration](fg:white bg:black)[](fg:black)'
+
+[time]
+format = ' (fg:black)[](fg:white)[󰦖 ](fg:black bg:white)[](fg:white bg:bright-black)[ $time](fg:white bg:bright-black)[](fg:bright-black)'
+time_format = '%H:%M'
+disabled = false
+
+[username]
+format = ' (fg:black)[](fg:yellow)[ ](fg:black bg:yellow)[](fg:yellow bg:black)[ $user](fg:white bg:black)[](fg:black) '
+show_always = true
+
+[character]
+format = '[$symbol](fg:black) '
+success_symbol = '[](fg:bold white)'
+error_symbol = '[](fg:bold red)'
+
+[profiles]
+transient = """$character"""
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CachyOS = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = ""
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+Nobara = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+Windows = "󰍲 "
