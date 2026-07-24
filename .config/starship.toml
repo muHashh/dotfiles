@@ -1,3 +1,10 @@
+right_format = "$time"
+
+[directory]
+truncation_length = 0
+truncate_to_repo = false
+style = "white"
+
 [aws]
 format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
 
@@ -15,6 +22,7 @@ format = '\[[$symbol($version)]($style)\]'
 
 [cmd_duration]
 format = '\[[⏱ $duration]($style)\]'
+style = "blue"
 
 [cobol]
 format = '\[[$symbol($version)]($style)\]'
@@ -179,7 +187,9 @@ format = '\[[$symbol($version)]($style)\]'
 format = '\[[$symbol$workspace]($style)\]'
 
 [time]
-format = '\[[$time]($style)\]'
+disabled = false
+format = '\[[$time]($style)\] '
+style = "blue"
 
 [username]
 format = '\[[$user]($style)\]'

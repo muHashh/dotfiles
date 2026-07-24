@@ -19,15 +19,15 @@ The script should do this: \(ai.prompt)</string>
 	<key>AITermAPI</key>
 	<integer>2</integer>
 	<key>AIVectorStore</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>ActiveUpdateCadence</key>
 	<real>120</real>
 	<key>AiMaxTokens</key>
-	<integer>1000000</integer>
+	<integer>1050000</integer>
 	<key>AiModel</key>
-	<string>gpt-4.1</string>
+	<string>gpt-5.5</string>
 	<key>AiResponseMaxTokens</key>
-	<integer>32768</integer>
+	<integer>128000</integer>
 	<key>AitermURL</key>
 	<string>https://api.openai.com/v1/responses</string>
 	<key>AitermUseLegacyAPI</key>
@@ -28127,13 +28127,13 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.087580747902393341</real>
+				<real>0.077972412109375</real>
 				<key>Color Space</key>
 				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.048928387463092804</real>
+				<real>0.021190253492890308</real>
 				<key>Red Component</key>
-				<real>0.029704773798584938</real>
+				<real>0.02117195489889977</real>
 			</dict>
 			<key>Background Color (Dark)</key>
 			<dict>
@@ -28991,7 +28991,7 @@ The script should do this: \(ai.prompt)</string>
 			<key>Non-ASCII Ligatures</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>JetBrainsMonoNFP-Regular 14</string>
+			<string>JetBrainsMonoNFP-Regular 12</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
 			<key>Open Toolbelt</key>

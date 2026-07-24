@@ -41,6 +41,7 @@ export PATH="~/.spicetify:$PATH"
 export EDITOR="nvim"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH="$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$PATH"
+export EZA_COLORS="reset:di=34:ex=32:ln=36:or=95:su=95:sf=95:sc=92:cm=92:bu=91:*.zip=35:*.tar=35:*.gz=35:*.7z=35:*.rar=35:*.jpg=35:*.jpeg=35:*.png=35:*.gif=35:*.svg=35:*.mp4=95:*.mkv=95:*.mov=95:*.mp3=94:*.flac=94:*.wav=94:*.pdf=32:*.doc=32:*.docx=32:*.md=32:*.txt=32:*.py=92:*.js=92:*.ts=92:*.rs=92:*.go=92:*.c=92:*.cpp=92:*.json=91:*.yml=91:*.yaml=91:*.toml=91:da=38;5;252:uu=38;5;254:gu=38;5;252:un=0:gn=0:uR=38;5;250:gR=38;5;250:sn=38;5;254:sb=38;5;252:ur=38;5;250:uw=38;5;250:ux=38;5;250:ue=38;5;250:gr=38;5;250:gw=38;5;250:gx=38;5;250:tr=38;5;250:tw=38;5;250:tx=38;5;250:lc=38;5;252:lm=38;5;252:in=38;5;245:bl=38;5;245:hd=38;5;252:xx=38;5;240"
 
 ## key bindings
 bindkey "^[[1;3C" forward-word
@@ -48,7 +49,8 @@ bindkey "^[[1;3D" backward-word
 
 ## aliases
 alias cat='bat --paging=never'
-alias eza='eza --icons --color never'
+# alias eza='eza --icons --color never'
+alias eza='eza --icons'
 alias ls='eza'
 alias ll='ls -l --group-directories-first --sort=created -r'
 alias la='ls -la'

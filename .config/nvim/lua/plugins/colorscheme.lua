@@ -116,10 +116,10 @@ return {
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "oxocarbon",
-      colorscheme = "Carbonfox",
+      -- colorscheme = "Carbonfox",
       -- colorscheme = "bathory",
       -- colorscheme = "neofusion",
-      -- colorscheme = "nightfox",
+      colorscheme = "nightfox",
       -- colorscheme = "nordfox",
       -- colorscheme = "gruvbox-material",
       -- colorscheme = "rose-pine-main",
