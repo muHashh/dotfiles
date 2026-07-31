@@ -36,6 +36,17 @@ source <(fzf --zsh)
 # SAVEHIST=10000
 # setopt appendhistory
 
+
+## Functions
+
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+	command rm -f -- "$tmp"
+}
+
 ## exports
 export PATH="~/.spicetify:$PATH"
 export EDITOR="nvim"
@@ -57,12 +68,14 @@ alias la='ls -la'
 alias fd='fd -I'
 alias dots='$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias cdto='cd; cd $(fd --type d --hidden . Desktop Documents .config workspace | fzf)'
-alias fm=". ranger"
-# alias fm="yazi"
+# alias fm=". ranger"
+alias fm="y"
+alias f="fm"
 alias aider="aider --model groq/deepseek-r1-distill-qwen-32b"
 alias cling="cling -l ~/workspace/tmp/cling.cpp"
 alias python="python3"
 alias pip="pip3"
+alias n="nvim"
 
 # prompts
 export PS1=$'\n'"%F{2} %*%F %F{default}%B%5~ %F{default}%B"$'\n'"$ "
